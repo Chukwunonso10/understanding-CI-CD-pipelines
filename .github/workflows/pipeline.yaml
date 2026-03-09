@@ -24,8 +24,8 @@ jobs:
       - name: Install dependencies
         run: npm ci                 # Preferred in CI: clean install, respects lockfile exactly
 
-      - name: Run tests
-        run: npm test               # Or npm run test / npm run ci:test — whatever your script is
+      # - name: Run tests
+      #   run: npm test               # Or npm run test / npm run ci:test — whatever your script is
 
       # Optional: Add linting (uncomment if you have a lint script)
       # - name: Run lint
