@@ -1,14 +1,13 @@
 name: testing pipeline
 
-on:
-  push:
-    branches: [master]
+on:    #what action should start it
+  push:   #push action should start it
+    branches: [master]   #to restrict this pipeline to a particular branch
   pull_request:
     branches: [master]
 
-jobs:
-  test:
-    name: Run Tests
+jobs:  #group of steps that run together
+  build:
     runs-on: ubuntu-latest
 
     steps:
